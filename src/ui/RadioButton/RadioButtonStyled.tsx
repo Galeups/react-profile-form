@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 
-const CheckBoxStyled = styled.label`
+const RadioButtonStyled = styled.label`
   height: 1.5rem;
   display: flex;
   align-items: center;
 
   .input {
-    margin-right: 10px;
+    margin: 0 10px 0 0;
     cursor: pointer;
   }
 
@@ -16,4 +16,4 @@ const CheckBoxStyled = styled.label`
   }
 `;
 
-export default CheckBoxStyled;
+export default RadioButtonStyled;
