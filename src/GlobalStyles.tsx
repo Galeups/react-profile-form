@@ -8,6 +8,7 @@ const GlobalStyles = createGlobalStyle`
       --color-bg: #e9e9e9;
       --color-text-secondary: rgba(0,0,0, 0.48);
       --color-link: --color-primary;
+      --color-avatar-bg: #d5e4f7;
       
       --font-size: 0.875rem;
       --font-size-secondary: 0.75rem;
