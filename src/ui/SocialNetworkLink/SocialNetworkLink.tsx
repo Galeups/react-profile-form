@@ -2,13 +2,18 @@ import React from 'react';
 import { ReactComponent as Folder } from '../../assets/icons/folder.svg';
 import SocialNetworkLinkStyled from './SocialNetworkLinkStyled';
 
+export enum SocialNetworks {
+  'TELEGRAM' = 'Telegram',
+  'GITHUB' = 'GitHub',
+  'RESUME' = 'Resume',
+}
+
 export type SocialNetworkLinkProps = {
-  name: string;
+  name: SocialNetworks;
   url: string;
 };
 
 const SocialNetworkLink: React.FC<SocialNetworkLinkProps> = ({ name, url }) => {
-  console.log(url);
   return (
     <SocialNetworkLinkStyled>
       <Folder className="icon" />
