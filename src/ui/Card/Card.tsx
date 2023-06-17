@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react';
-import CardStepStyled from './CardStepStyled';
+import CardStyled from './CardStyled';
 
 type CardProps = {
   $paddingTop?: number;
@@ -10,7 +10,7 @@ type CardProps = {
   children: ReactNode;
 };
 
-const CardStep: React.FC<CardProps> = ({
+const Card: React.FC<CardProps> = ({
   children,
   $paddingTop,
   $paddingRight,
@@ -18,15 +18,15 @@ const CardStep: React.FC<CardProps> = ({
   $paddingLeft,
 }) => {
   return (
-    <CardStepStyled
+    <CardStyled
       $paddingTop={$paddingTop}
       $paddingRight={$paddingRight}
       $paddingBottom={$paddingBottom}
       $paddingLeft={$paddingLeft}
     >
       {children}
-    </CardStepStyled>
+    </CardStyled>
   );
 };
 
-export default CardStep;
+export default Card;
