@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const CardStepStyled = styled.div<{
+const CardStyled = styled.div<{
   $paddingTop?: number;
   $paddingBottom?: number;
   $paddingLeft?: number;
@@ -19,4 +19,4 @@ const CardStepStyled = styled.div<{
     ${(props) => props.$paddingLeft || 110}px;
 `;
 
-export default CardStepStyled;
+export default CardStyled;

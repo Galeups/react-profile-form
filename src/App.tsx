@@ -1,13 +1,16 @@
 import React from 'react';
 import GlobalStyles from './GlobalStyles';
 import AppStyled from './AppStyled';
-import CardStep from './ui/CardStep/CardStep';
+import Card from './ui/Card/Card';
+import Profile from './Profile/Profile';
 
 function App() {
   return (
     <AppStyled>
       <GlobalStyles />
-      <CardStep>App</CardStep>
+      <Card>
+        <Profile />
+      </Card>
     </AppStyled>
   );
 }
